@@ -13,6 +13,9 @@ const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs'];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "navy";
+
 ---
 
 <html lang="en">
@@ -56,7 +59,7 @@ const goal = 3;
       </ul>
       <p>My skills are:</p>
       <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
       </ul>
       {happy && <p>I am happy to be learning Astro!</p>}
 
@@ -72,3 +75,14 @@ const goal = 3;
     </body>
   </body>
 </html>
+
+<style define:vars={{skillColor}}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: bold;
+  }
+</style>
