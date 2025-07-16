@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+
 import '../styles/global.css';
 
 const pageTitle = 'Кто';
@@ -16,8 +18,7 @@ const happy = true;
 const finished = false;
 const goal = 3;
 
-const skillColor = "navy";
-
+const skillColor = 'navy';
 ---
 
 <html lang="en">
@@ -31,8 +32,7 @@ const skillColor = "navy";
   </head>
   <body>
     <body>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
+      <Navigation />
       <h1>{pageTitle}</h1>
       <h2>такой, я вас не знаю идите на...!</h2>
       <p>
@@ -77,7 +77,7 @@ const skillColor = "navy";
   </body>
 </html>
 
-<style define:vars={{skillColor}}>
+<style define:vars={{ skillColor }}>
   h1 {
     color: purple;
     font-size: 4rem;
