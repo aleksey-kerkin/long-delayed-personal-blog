@@ -1,8 +1,8 @@
 ---
 title: 'Ну что, погнали!'
-published: 16.07.2025
 description: 'Стартовый пост моего блога, который я долго откладывал'
-author: 'aleksey.kerkin'
+pubDate: 'July 16 2025'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
 Ну что же, вот я и начал свой блог, хотя пока не совсем понятно, в каком формате все это будет
